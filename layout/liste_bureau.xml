@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tech.ab.testapp.ListeBureau">
+
+
+  <SearchView
+      android:id="@+id/searchBureau"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:queryHint="Search..." >
+
+  </SearchView>
+
+  <ListView
+      android:id="@+id/Liste_Bureau"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:dividerHeight="5dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+  </ListView>
+
+  <TextView
+      android:id="@+id/empty_listburo"
+      android:text="Empty"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:textSize="20dp"/>
+
+</LinearLayout>
